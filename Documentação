@@ -1,0 +1,42 @@
+#### Início do programa dia 22/05/19
+#### Desenvolvido por Gabriel Nascimento Sá
+
+-------Este documento Apresenta anotções sobre o funcionamento do Programa------
+
+O programa associa internamente alguns valores à características, segue a legenda:
+
+##ATRIBUTOS##           |  ##RAÇA##       |  ##CLASSE##       |  ##ANTECEDENTES##
+1 - FORÇA               |  1 - ANÃO       |  1 - BÁRBARO      |  1 - ACÓLITO
+2 - DESTREZA            |  2 - ELFO       |  2 - BARDO        |  2 - ARTESÃO DE GUILDA
+3 - CONSTITUIÇÃO        |  3 - HALFLING   |  3 - BRUXO        |  3 - ARTISTA
+4 - INTELIGÊNCIA        |  4 - HUMANO     |  4 - CLÉRIGO      |  4 - CHARLATÃO
+5 - SABEDORIA           |  5 - DRACONATO  |  5 - DRUIDA       |  5 - CRIMINOSO
+6 - CARISMA             |  6 - GNOMO      |  6 - FEITICEIRO   |  6 - EREMITA
+7 - PONTOS DE VIDA      |  7 - MEIO-ELFO  |  7 - GUERREIRO    |  7 - FORASTEIRO
+8 - CLASSE DE ARMADURA  |  8 - MEIO-ORC   |  8 - LADINO       |  8 - HEROI DO POVO
+                        |  9 - TIEFLING   |  9 - MAGO         |  9 - MARINHEIRO
+                                          | 10 - MONGE        | 10 - NOBRE
+                                          | 11 - PALADINO     | 11 - ORFAO
+                                          | 12 - PATRULHEIRO  | 12 - SABIO
+                                                              | 13 - SOLDADO
+
+
+ID's de Sub-Raças:
+
+#####ANÂO######         |  #####ELFO#####       |  #####HALFLING#####  |  #####GNOMOS#####
+1 - Anão da Colina      |  3 - Alto Elfo        |  6 - Pés Leves       |  8 - Gnomo da Floresta
+2 - Anão da Montanha    |  4 - Elfo da Floresta |  7 - Robustos        |  9 - Gnomo das Rochas
+                        |  5 - Elfo Negro       |
+
+
+Ordenação Interna de Perícias:
+
+0 - Atletismo       |  9 - Adestrar Animais
+1 - Acrobacia       | 10 - Intuição
+2 - Furtividade     | 11 - Medicina
+3 - Prestidigitação | 12 - Percepção
+4 - Arcanismo       | 13 - Sobrevivência
+5 - História        | 14 - Atuação
+6 - Investigação    | 15 - Enganação
+7 - Natureza        | 16 - Intimidação
+8 - Religião        | 17 - Persuasão
