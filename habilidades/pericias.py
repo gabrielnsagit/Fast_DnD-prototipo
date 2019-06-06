@@ -1,5 +1,5 @@
 class Pericias:
-    def __init__(self, atributos, nome_raca):
+    def __init__(self, atributos, tipo, proficiencia):
         self.__pericias_dict__ = {1: 'Acrobacia', 2: 'Adestrar Animais', 3: 'Arcanismo', 4: 'Atletismo', 5: 'Atuacao',
                                   6: 'Enganacao', 7: 'Furtividade', 8: 'Historia', 9: 'Intimidacao', 10: 'Intuicao',
                                   11: 'Investigacao', 12: 'Medicina', 13: 'Natureza', 14: 'Percepcao', 15: 'Persuasao',
@@ -8,7 +8,9 @@ class Pericias:
         self.__dict_relacao__ = {1: 1, 2: 9, 3: 4, 4: 0, 5: 14, 6: 15, 7: 2, 8: 5, 9: 16, 10: 10, 11: 6, 12: 11, 13: 7,
                                  14: 12, 15: 17, 16: 3, 17: 8, 18: 13}
 
-        self.__nome_raca__ = nome_raca
+        self.__proficiencia__ = proficiencia
+        self.__tipo__ = tipo
+        self.__pericias_valor__ = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
         self.__pericias__ = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
         self.__distribui_peric__()
 
@@ -36,14 +38,14 @@ class Pericias:
             print("{0} - {1}".format(i + 1, self.__pericias_dict__[i + 1]))
 
     def __distribui_peric__(self):
-        if self.__nome_raca__ == 'Humano':
+        if self.__tipo__ == 'Humano':
             print('Escolha uma das pericias abaixo: ')
             self.__menu_pericias__()
             opcao = int(input('Opcao: '))
             print('Adquiriu pericia em {}'.format(self.__pericias_dict__[opcao]))
             self.__pericias__[self.__dict_relacao__[opcao]] = 1
 
-        elif self.__nome_raca__ == 'Meio-Elfo':
+        elif self.__tipo__ == 'Meio-Elfo':
             print('Escolha duas das pericias abaixo: ')
             self.__menu_pericias__()
             opcao1 = int(input('Primeira Opcao: '))
@@ -54,7 +56,7 @@ class Pericias:
             self.__pericias__[self.__dict_relacao__[opcao2]] = 1
 
         for i in range(len(self.__pericias__)):
-            self.__pericias__[i] *= 2               # ESSE 2 deve variar em funcao do nivel
+            self.__pericias_valor__ = self.__pericias__[i] * self.__proficiencia__
 
     def print_pericias(self):
         print('-'*50)
@@ -62,7 +64,7 @@ class Pericias:
         print('-'*50)
         for i in range(len(self.__pericias__)):
             j = self.__dict_relacao__[i+1]
-            print('{0:-<20}>|{1: >2}|'.format(self.__pericias_dict__[i+1], self.__pericias__[j]))
+            print('{0:-<20}>|{1: >2}|'.format(self.__pericias_dict__[i+1], self.__pericias_valor__[j]))
 
     def get_pericias(self):
-        return self.__pericias__
+        return self.__pericias_valor__

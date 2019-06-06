@@ -12,7 +12,7 @@ class Gnomo(RacaBase):
     @staticmethod
     def __setSubRaca__():
         while True:
-            print('\nEscolha a Sub-Raça do Gnomo:')
+            print('\nEscolha a Sub-Raca do Gnomo:')
             print('1 - Gnomo da Floresta')
             print('2 - Gnomo das Rochas')
             opcao = int(input('Opcao: '))

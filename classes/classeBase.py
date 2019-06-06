@@ -101,3 +101,6 @@ class ClasseBase:
 
     def __level_up__(self):
         print('LEVEL UP!')
+
+    def get_proficiencia(self):
+        return self.__proficiencia__

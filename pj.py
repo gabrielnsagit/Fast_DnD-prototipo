@@ -1,4 +1,4 @@
-from random import random
+import dado
 from racas.anao import Anao
 from racas.elfo import Elfo
 from racas.halfling import Halfling
@@ -9,10 +9,11 @@ from racas.meioElfo import MeioElfo
 from racas.meioOrc import MeioOrc
 from racas.tiefling import Tiefling
 from habilidades.pericias import Pericias
+from classes.barabaro import Barabaro
 
 
 class Pj:
-    # DEFINIÇÃO DE DICIONÁRIOS PARA INSTANCIAÇÃO DE ATRIBUTOS DE CLASSES AGREGADAS
+    # DEFINICAO DE DICIONARIOS PARA INSTANCIACAO DE ATRIBUTOS DE CLASSES AGREGADAS
 
     classes = {1: "Barabaro", 2: "Bardo", 3: "Bruxo", 4: "Clerigo", 5: "Druida", 6: "Feiticeiro", 7: "Guerreiro",
                8: "Ladino", 9: "Mago", 10: "Monge", 11: "Paladino", 12: "Patrulheiro"}
@@ -24,13 +25,14 @@ class Pj:
     def __init__(self):
         self.__nomeJ__ = self.set_nome_j()
         self.__raca__ = self.__setRaca__()
-        self.__atBase__ = self.__distribuir_pts__()  # Atributos puramente distribuidos
-        self.__atMod__ = self.__mod_atr__()  # Atributos com modificadores de raça, classe, etc...
+        self.__atBase__ = self.__distribuir_pts__() + [0, 0]    # Atributos puramente distribuidos
+        self.__classe__ = self.__set_classe__()
+        self.__atMod__ = self.__mod_atr__()  # Atributos com modificadores de raca, classe, etc...
         self.__modificadores__ = [-5 + int(self.__atMod__[0] // 2), -5 + int(self.__atMod__[1] // 2),
                                   -5 + int(self.__atMod__[2] // 2), -5 + int(self.__atMod__[3] // 2),
                                   -5 + int(self.__atMod__[4] // 2), -5 + int(self.__atMod__[5] // 2)]
-        self.__pericias__ = Pericias(self.__modificadores__, self.__raca__.get_nome_raca())
-        self.__classe__ = self.__set_classe__()
+        self.__pericias__ = Pericias(self.__modificadores__, self.__raca__.get_nome_raca(),
+                                     self.__classe__.get_proficiencia())
         self.__antecedente__ = self.__set_antecedente__()
         self.__nomePj__ = self.__raca__.get_nome_pj()
         # Atributos na seguinte ordem:
@@ -103,7 +105,26 @@ class Pj:
             opcao = int(input("Opcao: "))
 
             if opcao in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]:
-                return opcao                                 # IMPLEMENTAR UM MÉTODO PARA RETORNO DA CLASSE
+                if opcao == 1:
+                    classe = Barabaro()
+                elif opcao == 2:
+                    classe = Elfo()
+                elif opcao == 3:
+                    classe = Halfling()
+                elif opcao == 4:
+                    classe = Humano()
+                elif opcao == 5:
+                    classe = Draconato()
+                elif opcao == 6:
+                    classe = Gnomo()
+                elif opcao == 7:
+                    classe = MeioElfo()
+                elif opcao == 8:
+                    classe = MeioOrc()
+                else:
+                    classe = Tiefling()
+
+                return classe
             else:
                 print("Digite uma opcao valida.\n")
 
@@ -128,7 +149,7 @@ class Pj:
             opcao = int(input("Opcao: "))
 
             if opcao in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
-                return opcao                 # IMPLEMENTAR UM MÉTODO PARA RETORNO DO ANTECEDENTE COMO UM OBJETO!!!!!!!!
+                return opcao                 # IMPLEMENTAR UM METODO PARA RETORNO DO ANTECEDENTE COMO UM OBJETO!!!!!!!!
             else:
                 print("Digite uma opcao valida.\n")
 
@@ -147,7 +168,7 @@ class Pj:
             final_atr = self.__aloca_pts__(atributos_val)
 
         if opcao == 2:
-            atributos_val = self.rola_atributos()  # CRIAR CLASSE DADO
+            atributos_val = dado.rola_atributos()  # CRIAR CLASSE DADO
             final_atr = self.__aloca_pts__(atributos_val)
 
         return final_atr
@@ -175,24 +196,17 @@ class Pj:
 
     def __mod_atr__(self):
         atr_final = self.__raca__.get_modificadores()
+        atr_final[6] += self.__classe__.get_vida_base()[0]
+        atr_final[7] += self.__classe__.get_vida_base()[1]
+        atr_final[6] += atr_final[2]
         for atr in range(len(self.__atBase__)):
             atr_final[atr] += self.__atBase__[atr]
         return atr_final
 
-    # COLOCAR MÉTODO EM CLASSE DADO
-    @staticmethod
-    def rola_atributos():
-        atributos = []
-        for atributo in range(0, 6):
-            dados = []
-            for dado in range(0, 4):
-                val_dado = int(((random()*50) % 6)) + 1
-                dados.append(val_dado)
-            menor = min(dados)
-            dados.remove(menor)
-            val_atributo = sum(dados)
-            atributos.append(val_atributo)
-        return atributos
-
+    def print_atributos(self):
+        print('Força - {}\nDestreza - {}\nConstituição - {}\nInteligência - {}\nSabedoria - {}\nCarisma - {}\n'
+              'Pontos de Vida - {}'.format(self.__atMod__[0], self.__atMod__[1], self.__atMod__[2], self.__atMod__[3]
+                                           , self.__atMod__[4], self.__atMod__[5], self.__atMod__[6]))
 
 a = Pj()
+a.print_atributos()
