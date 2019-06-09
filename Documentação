@@ -3,6 +3,8 @@
 
 -------Este documento Apresenta anotções sobre o funcionamento do Programa------
 
+#######################################################################################################################
+
 O programa associa internamente alguns valores à características, segue a legenda:
 
 ##ATRIBUTOS##           |  ##RAÇA##       |  ##CLASSE##       |  ##ANTECEDENTES##
@@ -20,6 +22,7 @@ O programa associa internamente alguns valores à características, segue a lege
                                           | 12 - PATRULHEIRO  | 12 - SABIO
                                                               | 13 - SOLDADO
 
+#######################################################################################################################
 
 ID's de Sub-Raças:
 
@@ -28,6 +31,7 @@ ID's de Sub-Raças:
 2 - Anão da Montanha    |  4 - Elfo da Floresta |  7 - Robustos        |  9 - Gnomo das Rochas
                         |  5 - Elfo Negro       |
 
+#######################################################################################################################
 
 Ordenação Interna de Perícias:
 
@@ -40,3 +44,16 @@ Ordenação Interna de Perícias:
 6 - Investigação    | 15 - Enganação
 7 - Natureza        | 16 - Intimidação
 8 - Religião        | 17 - Persuasão
+
+#######################################################################################################################
+
+Descrição de Classe 'RacaBase()':
+
+Contém informações comuns à todas as Raças -
+Nome (Do personagem)
+Tamanho
+Idade
+Peso
+Deslocamento
+
+#######################################################################################################################

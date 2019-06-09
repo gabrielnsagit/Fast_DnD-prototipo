@@ -1,4 +1,5 @@
 import dado
+from trataErro import pega_num
 from racas.anao import Anao
 from racas.elfo import Elfo
 from racas.halfling import Halfling
@@ -24,7 +25,9 @@ class Pj:
 
     def __init__(self):
         self.__nomeJ__ = self.set_nome_j()
-        self.__raca__ = self.__setRaca__()
+
+        self.__raca__ = self.__setRaca__()                      # Chama método para setar Raça
+
         self.__atBase__ = self.__distribuir_pts__() + [0, 0]    # Atributos puramente distribuidos
         self.__classe__ = self.__set_classe__()
         self.__atMod__ = self.__mod_atr__()  # Atributos com modificadores de raca, classe, etc...
@@ -47,9 +50,10 @@ class Pj:
 
     @staticmethod
     def __setRaca__():
+
         while True:
-            print("Escolha uma das racas abaixo: ")
-            print("1 - Anao")
+            print("Escolha uma das raças abaixo: ")
+            print("1 - Anão")
             print("2 - Elfo")
             print("3 - Halfling")
             print("4 - Humano")
@@ -59,7 +63,8 @@ class Pj:
             print("8 - Meio-Orc")
             print("9 - Tiefling")
             print()
-            opcao = int(input("Opcao: "))
+
+            opcao = pega_num()
 
             if opcao in [1, 2, 3, 4, 5, 6, 7, 8, 9]:
                 if opcao == 1:
@@ -102,7 +107,7 @@ class Pj:
             print("11 - Paladino")
             print("12 - Patrulheiro")
             print()
-            opcao = int(input("Opcao: "))
+            opcao = pega_num()
 
             if opcao in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]:
                 if opcao == 1:
@@ -146,7 +151,7 @@ class Pj:
             print("12 - Sabio")
             print("13 - Soldado")
             print()
-            opcao = int(input("Opcao: "))
+            opcao = pega_num()
 
             if opcao in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
                 return opcao                 # IMPLEMENTAR UM METODO PARA RETORNO DO ANTECEDENTE COMO UM OBJETO!!!!!!!!
@@ -205,8 +210,9 @@ class Pj:
 
     def print_atributos(self):
         print('Força - {}\nDestreza - {}\nConstituição - {}\nInteligência - {}\nSabedoria - {}\nCarisma - {}\n'
-              'Pontos de Vida - {}'.format(self.__atMod__[0], self.__atMod__[1], self.__atMod__[2], self.__atMod__[3]
-                                           , self.__atMod__[4], self.__atMod__[5], self.__atMod__[6]))
+              'Pontos de Vida - {}'.format(self.__atMod__[0], self.__atMod__[1], self.__atMod__[2], self.__atMod__[3],
+                                           self.__atMod__[4], self.__atMod__[5], self.__atMod__[6]))
+
 
 a = Pj()
 a.print_atributos()

@@ -9,6 +9,7 @@ class Humano(RacaBase):
         self.__idSub__ = None
         self.__habilidades__ = self.__vantagens__()
 
+    # MÉTODO ALTERA MODIFICADORES A SEREM SOMADOS COM OS ATRIBUTOS BASE, BEM COMO AS VANTAGENS (QUE HUMANOS NÃO RECEBEM)
     def __vantagens__(self):
         habilidades = []
         self.__modificadores__ = [1, 1, 1, 1, 1, 1, 0, 0]

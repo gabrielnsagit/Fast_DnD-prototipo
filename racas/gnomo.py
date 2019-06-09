@@ -1,4 +1,5 @@
 from .racaBase import RacaBase
+from trataErro import pega_num
 
 
 class Gnomo(RacaBase):
@@ -15,7 +16,9 @@ class Gnomo(RacaBase):
             print('\nEscolha a Sub-Raca do Gnomo:')
             print('1 - Gnomo da Floresta')
             print('2 - Gnomo das Rochas')
-            opcao = int(input('Opcao: '))
+
+            opcao = pega_num()
+
             if opcao in [1, 2]:
                 return opcao
             print("-" * 50)

@@ -1,4 +1,5 @@
 from .racaBase import RacaBase
+from trataErro import pega_num
 
 
 class Halfling(RacaBase):
@@ -11,13 +12,17 @@ class Halfling(RacaBase):
 
     @staticmethod
     def __setSubRaca__():
+
         while True:
             print('\nEscolha a Sub-Raça do Halfling:')
             print('1 - Pes-Leves')
             print('2 - Robusto')
-            opcao = int(input('Opcao: '))
+
+            opcao = pega_num()
+
             if opcao in [1, 2]:
                 return opcao
+
             print("-" * 50)
             print('Digite 1 ou 2.')
             print("-" * 50)
@@ -29,20 +34,14 @@ class Halfling(RacaBase):
             return 7
 
     def __vantagens__(self):
-        habilidades = []
+        habilidades = ["Sortudo", "Bravura", "Agilidade Halfling"]
 
         if self.__idSub__ == 6:
             self.__modificadores__ = [0, 2, 0, 0, 0, 1, 0, 0]
-            habilidades.append("Sortudo")
-            habilidades.append("Bravura")
-            habilidades.append("Agilidade Halfling")
             habilidades.append("Furtividade Natural")
 
         else:
             self.__modificadores__ = [0, 2, 1, 0, 0, 0, 0, 0]
-            habilidades.append("Sortudo")
-            habilidades.append("Bravura")
-            habilidades.append("Agilidade Halfling")
             habilidades.append("Resiliencia dos Robustos")
 
         return habilidades
