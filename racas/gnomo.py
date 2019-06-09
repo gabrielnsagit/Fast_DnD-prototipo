@@ -17,7 +17,7 @@ class Gnomo(RacaBase):
             print('1 - Gnomo da Floresta')
             print('2 - Gnomo das Rochas')
 
-            opcao = pega_num()
+            opcao = pega_num('Opção')
 
             if opcao in [1, 2]:
                 return opcao

@@ -24,7 +24,7 @@ class MeioElfo(RacaBase):
             print("4 - INT")
             print("5 - SAB")
             print('Primeiro atributo: ')
-            atr1 = pega_num()
+            atr1 = pega_num('Opção')
             if atr1 in [1, 2, 3, 4, 5]:
                 loop = False
             else:
@@ -33,7 +33,7 @@ class MeioElfo(RacaBase):
         loop = True
         while loop:
             print('Segundo atributo: ')
-            atr2 = pega_num()
+            atr2 = pega_num('Opção')
             if atr1 == atr2:
                 print('Este atributo já foi escolhido. Escolha outro da lista.')
                 print("1 - FOR")

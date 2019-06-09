@@ -30,7 +30,7 @@ class MeioOrc(RacaBase):
             print("5 - SAB")
             print("6 - CAR")
             print('Primeiro atributo: ')
-            atr1 = pega_num()
+            atr1 = pega_num('Opção')
             if atr1 in [2, 3, 4, 5, 6]:
                 loop = False
             else:
@@ -39,7 +39,7 @@ class MeioOrc(RacaBase):
         loop = True
         while loop:
             print('Segundo atributo: ')
-            atr2 = pega_num()
+            atr2 = pega_num('Opção')
             if atr1 == atr2:
                 print('Este atributo já foi escolhido. Escolha outro da lista.')
                 print("2 - DES")

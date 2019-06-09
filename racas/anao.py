@@ -18,7 +18,7 @@ class Anao(RacaBase):
             print('1 - Anao da Colina')
             print('2 - Anao da Montanha')
 
-            opcao = pega_num()
+            opcao = pega_num('Opção')
 
             if opcao in [1, 2]:
                 return opcao

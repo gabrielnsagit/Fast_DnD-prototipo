@@ -28,8 +28,10 @@ class Pj:
 
         self.__raca__ = self.__setRaca__()                      # Chama método para setar Raça
 
-        self.__atBase__ = self.__distribuir_pts__() + [0, 0]    # Atributos puramente distribuidos
         self.__classe__ = self.__set_classe__()
+
+        self.__atBase__ = self.__distribuir_pts__() + [0, 0]    # Atributos puramente distribuidos
+
         self.__atMod__ = self.__mod_atr__()  # Atributos com modificadores de raca, classe, etc...
         self.__modificadores__ = [-5 + int(self.__atMod__[0] // 2), -5 + int(self.__atMod__[1] // 2),
                                   -5 + int(self.__atMod__[2] // 2), -5 + int(self.__atMod__[3] // 2),
@@ -64,7 +66,7 @@ class Pj:
             print("9 - Tiefling")
             print()
 
-            opcao = pega_num()
+            opcao = pega_num('Opção')
 
             if opcao in [1, 2, 3, 4, 5, 6, 7, 8, 9]:
                 if opcao == 1:
@@ -107,7 +109,7 @@ class Pj:
             print("11 - Paladino")
             print("12 - Patrulheiro")
             print()
-            opcao = pega_num()
+            opcao = pega_num('Opção')
 
             if opcao in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]:
                 if opcao == 1:
@@ -151,7 +153,7 @@ class Pj:
             print("12 - Sabio")
             print("13 - Soldado")
             print()
-            opcao = pega_num()
+            opcao = pega_num('Opção')
 
             if opcao in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
                 return opcao                 # IMPLEMENTAR UM METODO PARA RETORNO DO ANTECEDENTE COMO UM OBJETO!!!!!!!!

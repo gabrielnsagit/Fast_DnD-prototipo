@@ -19,7 +19,7 @@ class Elfo(RacaBase):
             print('2 - Elfo da Floresta')
             print('3 - Elfo Negro')
 
-            opcao = pega_num()
+            opcao = pega_num('Opção')
 
             if opcao in [1, 2, 3]:
                 return opcao

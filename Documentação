@@ -24,6 +24,18 @@ O programa associa internamente alguns valores à características, segue a lege
 
 #######################################################################################################################
 
+Testes de Resistência:
+0 - FORÇA
+1 - DESTREZA
+2 - CONSTITUIÇÃO
+3 - INTELIGÊNCIA
+4 - SABEDORIA
+5 - CARISMA
+6 - PONTOS DE VIDA
+7 - CLASSE DE ARMADURA
+
+#######################################################################################################################
+
 ID's de Sub-Raças:
 
 #####ANÂO######         |  #####ELFO#####       |  #####HALFLING#####  |  #####GNOMOS#####

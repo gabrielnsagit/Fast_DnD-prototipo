@@ -18,7 +18,7 @@ class Halfling(RacaBase):
             print('1 - Pes-Leves')
             print('2 - Robusto')
 
-            opcao = pega_num()
+            opcao = pega_num('Opção')
 
             if opcao in [1, 2]:
                 return opcao
