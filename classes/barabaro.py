@@ -5,11 +5,13 @@ from trataErro import pega_num
 class Barabaro(ClasseBase):
     def __init__(self):
         super().__init__()
-        self.__nivel__ = 1
         self.__hp_base__ = 12           # + MODIFICADOR DE CONST -> SERÁ SOMADO POSTERIORMENTE
         self.__pericias__ = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-        self.__resist_test__ = [1, 0, 1, 0, 0, 0, 0]
-
+        self.__resist_test__ = [1, 0, 1, 0, 0, 0]
+        self.__prof_armaduras__ = ['Armaduras leves', 'Armaduras medias', 'Escudos']
+        self.__prof_armas__ = ['Armas simples', 'Armas marciais']
+        # IMPLEMENTAR EQUIPAMENTOS POSTERIORMENTE
+        self.__itens__ = ['004 x azagaias']
         self.__set_pericias__()
 
     def __set_pericias__(self):

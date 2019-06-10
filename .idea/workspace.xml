@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a526c2bd-cf3d-4c5b-8197-af17ce3d8123" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Proximos Passos" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classes/bardo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Documentação" beforeDir="false" afterPath="$PROJECT_DIR$/Documentação" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/barabaro.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/barabaro.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/classeBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/classeBase.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pj.py" beforeDir="false" afterPath="$PROJECT_DIR$/pj.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/racas/anao.py" beforeDir="false" afterPath="$PROJECT_DIR$/racas/anao.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/racas/elfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/racas/elfo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/racas/gnomo.py" beforeDir="false" afterPath="$PROJECT_DIR$/racas/gnomo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/racas/halfling.py" beforeDir="false" afterPath="$PROJECT_DIR$/racas/halfling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/racas/meioElfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/racas/meioElfo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/racas/meioOrc.py" beforeDir="false" afterPath="$PROJECT_DIR$/racas/meioOrc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trataErro.py" beforeDir="false" afterPath="$PROJECT_DIR$/trataErro.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/barabaro.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
+            <state relative-caret-position="136">
+              <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -37,19 +29,43 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pj.py">
+        <entry file="file://$PROJECT_DIR$/classes/bardo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1904">
-              <caret line="35" column="101" selection-start-line="35" selection-start-column="101" selection-end-line="35" selection-end-column="101" />
+            <state relative-caret-position="569">
+              <caret line="38" column="19" lean-forward="true" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/racas/humano.py">
+        <entry file="file://$PROJECT_DIR$/Documentação">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+            <state relative-caret-position="289">
+              <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/classeBase.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-859">
+              <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pj.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2422">
+              <caret line="207" column="40" selection-start-line="207" selection-start-column="40" selection-end-line="207" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,19 +89,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Documentação">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1207">
-              <caret line="71" selection-start-line="71" selection-end-line="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Proximos Passos">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="67" lean-forward="true" selection-start-line="5" selection-start-column="67" selection-end-line="5" selection-end-column="67" />
+              <caret line="5" column="67" selection-start-line="5" selection-start-column="67" selection-end-line="5" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -127,11 +134,12 @@
         <option value="$PROJECT_DIR$/racas/halfling.py" />
         <option value="$PROJECT_DIR$/racas/meioElfo.py" />
         <option value="$PROJECT_DIR$/racas/meioOrc.py" />
-        <option value="$PROJECT_DIR$/classes/classeBase.py" />
-        <option value="$PROJECT_DIR$/pj.py" />
-        <option value="$PROJECT_DIR$/classes/barabaro.py" />
-        <option value="$PROJECT_DIR$/Documentação" />
         <option value="$PROJECT_DIR$/Proximos Passos" />
+        <option value="$PROJECT_DIR$/classes/classeBase.py" />
+        <option value="$PROJECT_DIR$/Documentação" />
+        <option value="$PROJECT_DIR$/classes/bardo.py" />
+        <option value="$PROJECT_DIR$/classes/barabaro.py" />
+        <option value="$PROJECT_DIR$/pj.py" />
       </list>
     </option>
   </component>
@@ -149,6 +157,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -175,7 +184,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -391,13 +399,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/racas/humano.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/racas/racaBase.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -412,41 +413,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/classeBase.py">
+    <entry file="file://$PROJECT_DIR$/Proximos Passos">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+          <caret line="5" column="67" selection-start-line="5" selection-start-column="67" selection-end-line="5" selection-end-column="67" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pj.py">
+    <entry file="file://$PROJECT_DIR$/racas/humano.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1904">
-          <caret line="35" column="101" selection-start-line="35" selection-start-column="101" selection-end-line="35" selection-end-column="101" />
+        <state relative-caret-position="255">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/classeBase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-859">
+          <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Documentação">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/barabaro.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="136">
+          <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Documentação">
+    <entry file="file://$PROJECT_DIR$/classes/bardo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1207">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
+        <state relative-caret-position="569">
+          <caret line="38" column="19" lean-forward="true" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Proximos Passos">
+    <entry file="file://$PROJECT_DIR$/pj.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="67" lean-forward="true" selection-start-line="5" selection-start-column="67" selection-end-line="5" selection-end-column="67" />
+        <state relative-caret-position="2422">
+          <caret line="207" column="40" selection-start-line="207" selection-start-column="40" selection-end-line="207" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

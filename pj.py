@@ -11,6 +11,7 @@ from racas.meioOrc import MeioOrc
 from racas.tiefling import Tiefling
 from habilidades.pericias import Pericias
 from classes.barabaro import Barabaro
+from classes.bardo import Bardo
 
 
 class Pj:
@@ -115,7 +116,7 @@ class Pj:
                 if opcao == 1:
                     classe = Barabaro()
                 elif opcao == 2:
-                    classe = Elfo()
+                    classe = Bardo()
                 elif opcao == 3:
                     classe = Halfling()
                 elif opcao == 4:
